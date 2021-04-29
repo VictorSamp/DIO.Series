@@ -2,6 +2,6 @@
 {
     public abstract class EntidadeBase
     {
-        public int Id { get; private set; }
+        protected int Id { get; set; }
     }
 }
