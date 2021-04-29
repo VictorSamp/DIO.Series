@@ -47,5 +47,10 @@ namespace DIO.Entities
         {
             Ativo = false;
         }
+
+        public bool RetornaExcluido()
+        {
+            return Ativo;
+        }
     }
 }
