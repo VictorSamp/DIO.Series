@@ -6,7 +6,7 @@ namespace DIO.Series.Interfaces
     {
         internal List<T> Lista();
 
-        internal T RetornaPorId();
+        internal T RetornaPorId(int id);
 
         internal void Insere(T entidade);
 
