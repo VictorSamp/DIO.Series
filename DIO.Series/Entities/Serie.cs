@@ -29,6 +29,7 @@ namespace DIO.Entities
             stringBuilder.AppendLine($"Titulo: {Titulo}");
             stringBuilder.AppendLine($"Descrição: {Descricao}");
             stringBuilder.AppendLine($"Ano de Lançamento: {Ano}");
+            stringBuilder.AppendLine($"Ativo: {Ativo}");
             return stringBuilder.ToString();
         }
 
