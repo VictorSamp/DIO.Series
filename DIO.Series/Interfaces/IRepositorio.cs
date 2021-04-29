@@ -6,13 +6,13 @@ namespace DIO.Series.Interfaces
     {
         public List<T> Lista();
 
-        public T RetornaPorId(int id);
+        public T RetornarPorId(int id);
 
-        public void Insere(T entidade);
+        public void Inserir(T entidade);
 
-        public void Exclui(int id);
+        public void Excluir(int id);
 
-        public void Atualiza(int id, T entidade);
+        public void Atualizar(int id, T entidade);
 
         public int ProximoId();
     }
