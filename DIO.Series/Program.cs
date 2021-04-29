@@ -55,7 +55,7 @@ namespace DIO.Series
             Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
-            var serie = repositorio.RetornaPorId(indiceSerie);
+            var serie = repositorio.RetornarPorId(indiceSerie);
 
             Console.WriteLine(serie);
         }
@@ -65,7 +65,7 @@ namespace DIO.Series
             Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
-            var serie = repositorio.RetornaPorId(indiceSerie);
+            var serie = repositorio.RetornarPorId(indiceSerie);
 
             Console.Write("Deseja mesmo excluir a série: {0}? (1 - Sim, 2 - Não)", serie.RetornaTitulo());
             int confirmacaoUsuario = int.Parse(Console.ReadLine());
@@ -75,7 +75,7 @@ namespace DIO.Series
                 switch (confirmacaoUsuario)
                 {
                     case 1:
-                        repositorio.Exclui(indiceSerie);
+                        repositorio.Excluir(indiceSerie);
                         break;
 
                     case 2:
@@ -120,7 +120,7 @@ namespace DIO.Series
                                         ano: entradaAno,
                                         descricao: entradaDescricao);
 
-            repositorio.Atualiza(indiceSerie, atualizaSerie);
+            repositorio.Atualizar(indiceSerie, atualizaSerie);
         }
 
         private static void InserirSerie()
@@ -150,7 +150,7 @@ namespace DIO.Series
                                         ano: entradaAno,
                                         descricao: entradaDescricao);
 
-            repositorio.Insere(novaSerie);
+            repositorio.Inserir(novaSerie);
         }
 
         private static void ListarSeries()
