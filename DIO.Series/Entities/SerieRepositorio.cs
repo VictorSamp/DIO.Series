@@ -9,17 +9,17 @@ namespace DIO.Series.Entities
     {
         private List<Serie> listaSerie = new List<Serie>();
 
-        public void Atualiza(int id, Serie objeto)
+        public void Atualizar(int id, Serie objeto)
         {
             listaSerie[id] = objeto;
         }
 
-        public void Exclui(int id)
+        public void Excluir(int id)
         {
             listaSerie[id].Excluir();
         }
 
-        public void Insere(Serie objeto)
+        public void Inserir(Serie objeto)
         {
             listaSerie.Add(objeto);
         }
@@ -34,7 +34,7 @@ namespace DIO.Series.Entities
             return listaSerie.Count();
         }
 
-        public Serie RetornaPorId(int id)
+        public Serie RetornarPorId(int id)
         {
             return listaSerie[id];
         }
